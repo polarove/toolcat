@@ -17,9 +17,6 @@
   "scripts": {
     "build": "vite build",
     "test": "vitest",
-    "sync": "yarn push:gitee && yarn push:github",
-    "push:gitee": "git push -u gitee main",
-    "push:github": "git push -u github main",
     "version:patch": "npm version patch",
     "version:minor": "npm version minor",
     "version:major": "npm version major"

@@ -6,6 +6,14 @@
     "verifications"
   ],
   "type": "module",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.ts",
+      "import": "./index.ts"
+    }
+  },
   "scripts": {
     "build": "vite build",
     "test": "vitest",

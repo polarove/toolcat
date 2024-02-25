@@ -16,6 +16,9 @@
     "version:minor": "npm version minor",
     "version:major": "npm version major"
   },
+  "repository": {
+    "github": "https://github.com/polarove/toolcat"
+  },
   "version": "1.0.0",
   "author": "liuqi",
   "license": "MIT",

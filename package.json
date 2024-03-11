@@ -24,7 +24,7 @@
   "repository": {
     "github": "https://github.com/polarove/toolcat"
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "liuqi",
   "license": "MIT",
   "main": "index.ts",

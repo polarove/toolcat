@@ -1,5 +1,5 @@
 import { isArray } from '@vue/shared'
-import VoidUtil from '../../src/void'
+import VoidUtil from '../void'
 import Debugger from '../debugger'
 
 export default class ListUtil {

@@ -3,14 +3,14 @@ import Debugger from '../../src/debugger'
 import { expect, test } from 'vitest'
 
 test(
-  Debugger.format(`${ListUtil.name}.isEmpty`, '[] shall be an empty list'),
+  Debugger.print(`${ListUtil.name}.isEmpty`, '[] shall be an empty list'),
   () => {
     expect(ListUtil.isEmpty([])).toBe(true)
   }
 )
 
 test(
-  Debugger.format(
+  Debugger.print(
     `${ListUtil.name}.isNotEmpty`,
     '[1, null, 7, undefined] shall NOT be an empty list'
   ),
@@ -20,7 +20,7 @@ test(
 )
 
 test(
-  Debugger.format(
+  Debugger.print(
     `${ListUtil.name}.isVoid`,
     '[undefined, null] shall be a void list'
   ),
@@ -30,7 +30,7 @@ test(
 )
 
 test(
-  Debugger.format(
+  Debugger.print(
     `${ListUtil.name}.isNotVoid`,
     ' [1, null, 7, undefined] shall NOT be a void list'
   ),
@@ -40,7 +40,7 @@ test(
 )
 
 test(
-  Debugger.format(
+  Debugger.print(
     `${ListUtil.name}.hasVoidElement`,
     ' [1, null, 7, undefined] has void elements'
   ),

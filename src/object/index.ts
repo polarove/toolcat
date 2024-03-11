@@ -1,6 +1,6 @@
-import ListUtil from '../../src/list'
+import ListUtil from '../list'
 import { isObject } from '@vue/shared'
-import VoidUtil from '../../src/void'
+import VoidUtil from '../void'
 import { isSymbol } from '@vue/shared'
 import Debugger from '../debugger'
 

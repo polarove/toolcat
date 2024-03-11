@@ -8,7 +8,7 @@ export async function findElementById(
 
 export async function findElementById(id: string, timeout?: number) {
   return new Promise((resolve, reject) => {
-    let el = null
+    let el: HTMLElement | null = null
     if (timeout)
       setTimeout(() => {
         el = document.getElementById(id)

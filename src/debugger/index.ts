@@ -5,7 +5,7 @@ export default class Debugger {
     return `[${position}]: ${expect}, ${'got ' + result}`
   }
 
-  static formatRequestError = (position: string, error: Description) => {
+  static print = (position: string, error: Description) => {
     return `[${position}]: ${error}`
   }
 

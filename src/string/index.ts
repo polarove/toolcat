@@ -6,7 +6,7 @@ export default class StrUtil {
   //   'the required parameter is not a string, this will fail in production'
 
   /**
-   * to judge whether the value is exact empty
+   * to judge whether the value is empty
    *
    * @example '   ' => false
    * @example '   f' => false
@@ -23,9 +23,9 @@ export default class StrUtil {
   }
 
   /**
-   * to judge where the value is NOT exact empty
+   * to judge where the value is NOT empty
    *
-   * @example '   ' => false
+   * @example '   ' => true
    * @example '   f' => true
    * @param val
    * @return boolean

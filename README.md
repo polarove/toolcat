@@ -1,3 +1,7 @@
+### More Language
+
+[Chinese](https://github.com/polarove/toolcat/blob/master/README-zh_CN.md)
+
 ### A set of utility functions
 
 A set of utility functions in the style of class
@@ -18,7 +22,7 @@ VoidUtil.isVoid(undefined) // true
 
 ## Notification
 
-需要 typescript
+typescript is needed
 
 ## Get started to dev
 

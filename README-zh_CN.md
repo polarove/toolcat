@@ -1,4 +1,4 @@
-### A set of utility functions
+### 一个类风格的工具包
 
 A set of utility functions in the style of class
 
@@ -16,22 +16,22 @@ VoidUtil.isVoid(null) // true
 VoidUtil.isVoid(undefined) // true
 ```
 
-## Notification
+## 注意事项
 
 需要 typescript
 
-## Get started to dev
+## 如何进行开发
 
 ```shell
 pnpm i
 pnpm dev
 ```
 
-## How to test
+## 如何运行测试
 
-This project uses `vitest` to run tests
+这个项目使用 `vitest` 运行测试用例
 
-The test files can be found at `src/__test__` directory
+测试文件可以在 `src/__test__` 目录下找到
 
 ```shell
 pnpm test

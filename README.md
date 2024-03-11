@@ -1,20 +1,36 @@
 ### 一个工具类
 
-包括数组、对象、字符串等判空
+A set of utility functions in the style of java class
 
-时间工具（尚在测试中）
+eg.
+
+```ts
+StrUtil.isBlank('24') // false
+```
+
+```ts
+VoidUtil.isVoid(null) // true
+```
+
+```ts
+VoidUtil.isVoid(undefined) // true
+```
+
+
 
 ## 注意事项
 
 需要 typescript
 
-# 如何安装
+
+
+## 如何安装
 
 ```shell
 pnpm i
 ```
 
-# 如何测试
+## 如何测试
 
 ```shell
 pnpm test

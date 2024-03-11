@@ -20,6 +20,13 @@ VoidUtil.isVoid(null) // true
 VoidUtil.isVoid(undefined) // true
 ```
 
+## How to install
+
+```shell
+// npm can be replaced with your faver of package manager, like pnpm, yarn .etc
+npm i @polaris_liu/toolcat
+```
+
 ## Notification
 
 typescript is needed

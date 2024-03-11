@@ -18,8 +18,9 @@ VoidUtil.isVoid(undefined) // true
 
 ## 如何安装
 
+npm 可以替换为您喜欢的包管理器，如 pnpm、yarn 等
+
 ```shell
-// npm可以替换为您喜欢的包管理器，如pnpm、yarn等
 npm i @polaris_liu/toolcat
 ```
 

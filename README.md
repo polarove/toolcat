@@ -22,8 +22,9 @@ VoidUtil.isVoid(undefined) // true
 
 ## How to install
 
+npm can be replaced with your faver of package manager, like pnpm, yarn .etc
+
 ```shell
-// npm can be replaced with your faver of package manager, like pnpm, yarn .etc
 npm i @polaris_liu/toolcat
 ```
 

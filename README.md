@@ -6,11 +6,11 @@
 # 如何安装
 
 ```shell
-yarn
+pnpm i
 ```
 
 # 如何测试
 
 ```shell
-yarn test
+pnpm test
 ```

@@ -1,4 +1,4 @@
-### More Language
+### More Languages
 
 [Chinese](https://github.com/polarove/toolcat/blob/master/README-zh_CN.md)
 

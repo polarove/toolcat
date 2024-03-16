@@ -62,4 +62,16 @@ export default class StrUtil {
   static isNotBlank = (val: unknown): boolean => {
     return !this.isBlank(val)
   }
+
+  /**
+   * insert a string into another string
+   *
+   * @param source
+   * @param at
+   * @param plugin
+   * @return boolean
+   */
+  static insert = (source: string, at: number, plugin: string): string => {
+    return source.slice(0, at).concat(plugin).concat(source.slice(at))
+  }
 }

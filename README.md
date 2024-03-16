@@ -36,7 +36,6 @@ typescript is needed
 
 ```shell
 pnpm i
-pnpm dev
 ```
 
 ## How to test

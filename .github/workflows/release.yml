@@ -1,12 +1,9 @@
 name: Release
 
-# on:
-#   push:
-#     tags:
-#       - 'v*'
 on:
   push:
-    branches: ['master']
+    tags:
+      - 'v*'
 
 jobs:
   release:

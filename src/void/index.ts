@@ -1,6 +1,6 @@
 export default class VoidUtil {
   /**
-   * to judge if the value is null, the type is restricted
+   * to judge if the value is null
    *
    * @param val
    * @return boolean
@@ -10,7 +10,7 @@ export default class VoidUtil {
   }
 
   /**
-   * to judge if the value is undefined, the type is restricted
+   * to judge if the value is undefined
    *
    * @param val
    * @return boolean

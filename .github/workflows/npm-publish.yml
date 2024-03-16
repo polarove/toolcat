@@ -32,6 +32,7 @@ jobs:
       - run: git config --global user.email "liuqi6602@163.com"
       - run: git config --global user.name "ci-bot/toolcat"
       - run: npm version patch
+      - run: echo ${{secrets.npm_token}}
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

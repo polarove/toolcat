@@ -1,2 +1,4 @@
+#!/usr/bin/env bash
+
 echo "checking commit message"
 pnpm exec commitlint --config commitlint.config.js --edit "${1}"

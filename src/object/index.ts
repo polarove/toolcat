@@ -5,7 +5,7 @@ import { isSymbol } from '@vue/shared'
 import Debugger from '../debugger'
 
 export default class ObjUtil {
-  private static readonly expect = 'expecting an object'
+  private static readonly expect = 'an object'
 
   static isSymbol = (object: unknown): object is symbol => {
     return isSymbol(object)

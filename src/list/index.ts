@@ -3,7 +3,7 @@ import VoidUtil from '../void'
 import Debugger from '../debugger'
 
 export default class ListUtil {
-  private static readonly expect = 'expecting a list'
+  private static readonly expect = 'a list'
 
   /**
    * to judge whether the value is an empty list

@@ -19,7 +19,8 @@ export default class HtmlUtil {
           el = document.getElementById(id)
         }, timeout)
       else el = document.getElementById(id)
-      if (VoidUtil.isVoid(el)) reject(`Element with id: ${id} is missing`)
+      if (VoidUtil.isVoid(el))
+        reject(`[HtmlUtil]: Element with id: ${id} is missing`)
       else resolve(el)
     })
   }

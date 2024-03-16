@@ -6,33 +6,6 @@ on:
       - 'v*'
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-      - run: npm i
-      - run: npm ci
-      - run: npm test
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-      - run: npm i pnpm -g
-      - run: npm i husky -g
-      - run: git config --global user.email "liuqi6602@163.com"
-      - run: git config --global user.name "ci-bot/toolcat"
-      - run: npm version patch
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
   release:
     needs: publish-npm
     runs-on: ubuntu-latest
@@ -47,6 +20,4 @@ jobs:
         with:
           node-version: lts/*
 
-      - run: npx changelogithub
-        env:
-          GITHUB_TOKEN: ${{secrets.GITUSER_TOKEN}}
+      - run: echo "hi"

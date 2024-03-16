@@ -1,6 +1,6 @@
 # toolcat
 
-[![npm version](https://img.shields.io/npm/v/@cz-translated-changelog/zh-cn.svg?style=flat-square)](https://www.npmjs.com/package/@polaris_liu/toolcat) [![npm downloads](https://img.shields.io/npm/dm/@cz-translated-changelog/zh-cn.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@polaris_liu/toolcat&from=2024-01-01)
+[![npm version](https://img.shields.io/npm/v/@polaris_liu/toolcat.svg?style=flat-square)](https://www.npmjs.com/package/@polaris_liu/toolcat) [![npm downloads](https://img.shields.io/npm/dm/@polaris_liu/toolcat.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@polaris_liu/toolcat&from=2024-01-01)
 
 ### More Languages
 

@@ -30,7 +30,6 @@ jobs:
       - run: npm i pnpm -g
       - run: git config --global user.email "liuqi6602@163.com"
       - run: git config --global user.name "ci-bot/toolcat"
-      - run: npm ci
       - run: npm version patch
       - run: npm publish
         env:

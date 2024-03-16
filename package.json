@@ -29,9 +29,6 @@
   "author": "liuqi",
   "license": "MIT",
   "main": "index.ts",
-  "dependencies": {
-    "@vue/shared": "latest"
-  },
   "devDependencies": {
     "@types/node": "latest",
     "@commitlint/cli": "latest",
@@ -46,7 +43,8 @@
     "vitest": "latest"
   },
   "peerDependencies": {
-    "typescript": ">=5.0.0"
+    "typescript": ">=5.0.0",
+    "@vue/shared": "latest"
   },
   "publishConfig": {
     "access": "public",

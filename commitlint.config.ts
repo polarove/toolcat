@@ -1,4 +1,4 @@
-// This config is referenced from element-plus
+// This config is adapted from element-plus
 // reference: https://github.com/element-plus/element-plus/blob/dev/commitlint.config.ts
 
 import { execSync } from 'child_process'

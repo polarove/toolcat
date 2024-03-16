@@ -4,7 +4,7 @@
 
 ### More Languages
 
-[Chinese](https://github.com/polarove/toolcat/blob/master/README-zh_CN.md)
+[简体中文](https://github.com/polarove/toolcat/blob/master/README-zh_CN.md)
 
 ### A set of utility functions
 

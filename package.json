@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/polarove/toolcat"
+    "url": "git+https://github.com/polarove/toolcat.git"
   },
   "version": "1.0.17",
   "author": "liuqi",

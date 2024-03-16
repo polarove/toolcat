@@ -6,6 +6,24 @@ on:
       - 'v*'
 
 jobs:
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+      - run: npm i pnpm -g
+      - run: npm i husky -g
+      - run: npm run test
+      - run: git config --global user.email "liuqi6602@163.com"
+      - run: git config --global user.name "ci-bot/toolcat"
+      - run: npm version patch
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
   release:
     runs-on: ubuntu-latest
     permissions:

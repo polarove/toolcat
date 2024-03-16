@@ -2,6 +2,8 @@ import StrUtil from '../string'
 import Debugger from '../debugger'
 
 export default class DateUtil {
+  static readonly expect = 'expecting a string of date'
+
   static isValidDate(val: string | undefined): boolean {
     if (StrUtil.isEmpty(val)) return false
     else if (typeof val === 'string')
@@ -20,6 +22,6 @@ export default class DateUtil {
    */
   static toTimestamp(dateStr: string): number | undefined {
     if (this.isValidDate(dateStr)) return new Date(dateStr).getTime()
-    else Debugger.error(this.name, 'string of date', dateStr)
+    else Debugger.error(this.name, this.expect, dateStr)
   }
 }

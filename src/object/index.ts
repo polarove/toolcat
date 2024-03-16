@@ -35,7 +35,7 @@ export default class ObjUtil {
 
   /**
    * sort keys of an object
-   * @example { a:null, b:2 } => [ b, a ]
+   * @example { a:null, b:2 } => [ 'b', 'a' ]
    * @param object
    * @return string[]
    */

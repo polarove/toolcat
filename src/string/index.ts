@@ -2,9 +2,6 @@ import { isString, isSymbol } from '@vue/shared'
 import VoidUtil from '../void'
 
 export default class StrUtil {
-  // private static readonly illegalInput =
-  //   'the required parameter is not a string, this will fail in production'
-
   /**
    * to judge whether the value is empty
    *

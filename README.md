@@ -1,3 +1,7 @@
+# toolcat
+
+[![npm version](https://img.shields.io/npm/v/@cz-translated-changelog/zh-cn.svg?style=flat-square)](https://www.npmjs.com/package/@polaris_liu/toolcat) [![npm downloads](https://img.shields.io/npm/dm/@cz-translated-changelog/zh-cn.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@polaris_liu/toolcat&from=2024-01-01)
+
 ### More Languages
 
 [Chinese](https://github.com/polarove/toolcat/blob/master/README-zh_CN.md)
@@ -6,7 +10,7 @@
 
 A set of utility functions in the style of class
 
-eg.
+### eg.
 
 ```ts
 StrUtil.isBlank('24') // false
@@ -18,14 +22,6 @@ VoidUtil.isVoid(null) // true
 
 ```ts
 VoidUtil.isVoid(undefined) // true
-```
-
-## How to install
-
-npm can be replaced with your faver of package manager, like pnpm, yarn .etc
-
-```shell
-npm i @polaris_liu/toolcat
 ```
 
 ## Notification

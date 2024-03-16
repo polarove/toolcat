@@ -2,7 +2,7 @@ name: Publish
 
 on:
   push:
-    branch:
+    branches:
       - 'master'
 
 jobs:
@@ -37,9 +37,7 @@ jobs:
 
       - run: git config --global user.name "ci-bot/toolcat"
 
-      - run: npm version patch
-
-      - run: npm push 
+      - run: npm push origin | npm version patch
 
       - run: npm publish
         env:

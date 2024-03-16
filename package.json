@@ -23,7 +23,7 @@
     "url": "git+https://github.com/polarove/toolcat.git"
   },
   "version": "1.0.21",
-  "author": "liuqi",
+  "author": "liuqi <liuqi6602@163.com>",
   "license": "MIT",
   "main": "index.ts",
   "devDependencies": {

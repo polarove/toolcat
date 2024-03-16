@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm ci
       - run: npm i
+      - run: npm ci
       - run: npm test
   publish-npm:
     needs: build
@@ -27,7 +27,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm i pnpm -g
       - run: npm i husky -g
-      - run: npm run test
       - run: git config --global user.email "liuqi6602@163.com"
       - run: git config --global user.name "ci-bot/toolcat"
       - run: npm version patch

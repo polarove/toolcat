@@ -28,10 +28,10 @@ VoidUtil.isVoid(undefined) // true
 
 typescript is needed
 
-## Get started to dev
+## Get started
 
 ```shell
-pnpm i
+npm i @cz-translated-changelog/zh-cn
 ```
 
 ## How to test

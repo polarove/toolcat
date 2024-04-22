@@ -28,16 +28,13 @@
   "main": "index.ts",
   "devDependencies": {
     "@types/node": "latest",
-    "@commitlint/cli": "latest",
-    "@commitlint/config-conventional": "latest",
-    "@esbuild-kit/cjs-loader": "latest",
     "commitizen": "latest",
-    "cz-conventional-changelog": "latest",
-    "fast-glob": "latest",
     "husky": "latest",
     "typescript": "latest",
-    "vite": "latest",
-    "vitest": "latest"
+    "vitest": "latest",
+    "@cz-translated-changelog/zh-cn": "^0.0.42",
+    "@translated-lint/zh-cn": "^0.0.29",
+    "lint-staged": "^15.2.2"
   },
   "peerDependencies": {
     "typescript": ">=5.0.0",
@@ -46,5 +43,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/@cz-translated-changelog/zh-cn"
+    }
   }
 }

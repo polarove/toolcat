@@ -1,5 +1,5 @@
-import Debugger from '../debugger'
-import StrUtil from '../string'
+import Debugger from '../src/debugger'
+import StrUtil from '../src/string'
 import { isString } from '@vue/shared'
 import { expect, test } from 'vitest'
 

@@ -1,5 +1,5 @@
-import ListUtil from '../list'
-import Debugger from '../../src/debugger'
+import ListUtil from '../src/list'
+import Debugger from '../src/debugger'
 import { expect, test } from 'vitest'
 
 test(

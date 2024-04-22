@@ -1,5 +1,5 @@
-import Debugger from '../../src/debugger'
-import VoidUtil from '../void'
+import Debugger from '../src/debugger'
+import VoidUtil from '../src/void'
 import { expect, test } from 'vitest'
 
 test(Debugger.print(VoidUtil.name, 'isNull'), () => {

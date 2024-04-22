@@ -1,5 +1,5 @@
-import Debugger from '../debugger'
-import ObjUtil from '../object'
+import Debugger from '../src/debugger'
+import ObjUtil from '../src/object'
 import { isObject } from '@vue/shared'
 import { expect, test } from 'vitest'
 

@@ -1,4 +1,4 @@
-import Debuger from '../debugger'
+import Debuger from '../src/debugger'
 import { test } from 'vitest'
 
 test(Debuger.print('Debugger', 'Test Debugger'), () => {

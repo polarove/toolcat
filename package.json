@@ -5,16 +5,23 @@
     "utils",
     "verifications"
   ],
-  "types": "index.d.ts",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "require": "./index.ts",
-      "import": "./index.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
+  "files": [
+    "dist",
+    "*.mjs"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "unbuild",
     "test": "vitest",
     "prepare": "husky"
   },
@@ -25,20 +32,20 @@
   "version": "1.0.22",
   "author": "liuqi <liuqi6602@163.com>",
   "license": "MIT",
-  "main": "index.ts",
   "devDependencies": {
+    "@cz-translated-changelog/zh-cn": "workspace:*",
+    "@translated-lint/zh-cn": "workspace:*",
     "@types/node": "latest",
     "commitizen": "latest",
     "husky": "latest",
+    "lint-staged": "^15.2.2",
     "typescript": "latest",
-    "vitest": "latest",
-    "@cz-translated-changelog/zh-cn": "workspace:*",
-    "@translated-lint/zh-cn": "workspace:*",
-    "lint-staged": "^15.2.2"
+    "unbuild": "^2.0.0",
+    "vitest": "latest"
   },
   "peerDependencies": {
-    "typescript": ">=5.0.0",
-    "@vue/shared": ">=3.0.0"
+    "@vue/shared": ">=3.0.0",
+    "typescript": ">=5.0.0"
   },
   "publishConfig": {
     "access": "public",

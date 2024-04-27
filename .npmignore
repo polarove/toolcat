@@ -1,8 +1,0 @@
-tsconfig.json
-.gitignore
-__test__
-.github
-.husky
-node_modules
-.prettierignore
-.prettierrc.json

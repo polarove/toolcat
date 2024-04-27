@@ -33,8 +33,8 @@
   "author": "liuqi <liuqi6602@163.com>",
   "license": "MIT",
   "devDependencies": {
-    "@cz-translated-changelog/zh-cn": "workspace:*",
-    "@translated-lint/zh-cn": "workspace:*",
+    "@cz-translated-changelog/zh-cn": "latest",
+    "@translated-lint/zh-cn": "latest",
     "@types/node": "latest",
     "commitizen": "latest",
     "husky": "latest",

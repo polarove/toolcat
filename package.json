@@ -55,5 +55,8 @@
     "commitizen": {
       "path": "node_modules/@cz-translated-changelog/zh-cn"
     }
+  },
+  "dependencies": {
+    "@vue/shared": "^3.4.31"
   }
 }

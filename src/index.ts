@@ -5,4 +5,7 @@ export * from './list'
 export * from './object'
 export * from './void'
 export * from './string'
+export * from './validation/email'
+export * from './validation'
+
 export type * from './types'

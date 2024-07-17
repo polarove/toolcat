@@ -34,27 +34,30 @@ export default class ObjUtil {
   }
 
   /**
+   * Pure
+   *
    * sort keys of an object
    * @example { a:null, b:2 } => [ 'b', 'a' ]
    * @param object
    * @return string[]
    */
-  static sortKeys = (object: object | unknown, order?: boolean): string[] => {
+  static extractKeys = (
+    object: object | unknown,
+    order?: boolean
+  ): string[] => {
     let res: string[] = []
+    let keysWithValue: string[] = []
+    let keysWithoutValue: string[] = []
     if (isObject(object)) {
-      const withoutValue = Object.keys(object).filter((key: string) =>
-        VoidUtil.isVoid(object[key as keyof object])
-      )
-
-      const withValue = Object.keys(object)
-        .filter((key: string) =>
-          VoidUtil.isNotVoid(object[key as keyof object])
-        )
-        .sort((a, b) => a.length - b.length)
+      Object.keys(object).filter((key: string) => {
+        if (VoidUtil.isVoid(object[key as keyof object]))
+          keysWithoutValue.push(key)
+        else keysWithValue.push(key)
+      })
 
       res = order
-        ? withoutValue.concat(withValue)
-        : withValue.concat(withoutValue)
+        ? keysWithoutValue.concat(keysWithValue)
+        : keysWithValue.concat(keysWithoutValue)
     } else Debugger.warn(this.name, this.expect, object)
     return res
   }

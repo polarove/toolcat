@@ -1,0 +1,43 @@
+{
+    "name": "@polaris_liu/toolcat",
+    "version": "2.0.1",
+    "description": "A tool cat",
+    "private": false,
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "unbuild",
+        "test": "vitest",
+        "prepare": "husky"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@types/node": "^22.7.4",
+        "typescript": "^5.5.3",
+        "unbuild": "^2.0.0",
+        "vitest": "^2.1.1",
+             "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3"
+    },
+   "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"}
+}
